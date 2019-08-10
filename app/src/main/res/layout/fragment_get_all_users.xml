@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".getAllUsers">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/autoComplete"
+        android:background="#deb6f2d9"
+        android:textSize="20sp"
+        android:completionThreshold="1"
+        android:hint="Search here!!!"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:id="@+id/searchProfileBtn"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/autoComplete"
+        android:layout_alignEnd="@+id/autoComplete"
+        android:layout_alignTop="@+id/autoComplete"
+        android:contentDescription="@string/app_name"
+        android:src="@android:drawable/ic_search_category_default" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/UsersRecyclerView"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

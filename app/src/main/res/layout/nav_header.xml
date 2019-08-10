@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/login_background"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_back_pic">
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="hbjhbfksbfkf"
+            android:textSize="20sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="hbjhbfksbfkf"
+            android:textSize="15sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textAlignment="viewEnd"
+            android:gravity="end"
+            android:layout_below="@+id/nameText"/>
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="hbjhbfksbfkf"
+            android:textSize="12sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/statusText"/>
+
+</RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="85dp"
+        android:id="@+id/profile_front_pic"/>
+
+</RelativeLayout>
+
+    <!--android:scaleType="centerCrop"   in image view-->
